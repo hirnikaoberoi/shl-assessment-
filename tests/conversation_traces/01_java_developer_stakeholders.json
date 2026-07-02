@@ -1,0 +1,14 @@
+{
+  "id": "01_java_developer_stakeholders",
+  "persona": "Hiring manager filling a mid-level backend role, straight from the assignment's own example.",
+  "turns": [
+    { "user": "Hiring a Java developer who works with stakeholders" },
+    { "user": "Mid-level, around 4 years experience. This is for selection." }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["clarification", "recommendation"],
+    "min_recommendations_by_end": 1,
+    "max_recommendations": 10,
+    "notes": "Turn 1 is under-specified (no seniority/purpose) -> must clarify, not recommend. Turn 2 supplies enough context -> should recommend Java-related + stakeholder/communication assessments."
+  }
+}

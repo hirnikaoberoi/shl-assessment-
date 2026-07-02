@@ -1,0 +1,13 @@
+{
+  "id": "05_comparison_named_assessments",
+  "persona": "User directly compares two well-known SHL products by name.",
+  "turns": [
+    { "user": "What is the difference between OPQ32r and the Global Skills Assessment (GSA)?" }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["comparison"],
+    "min_recommendations_by_end": 0,
+    "max_recommendations_by_end": 0,
+    "notes": "Comparison turns are informational and must never populate recommendations, even though both named items exist in the catalog."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "02_vague_no_premature_recommendation",
+  "persona": "A recruiter who opens with almost no information.",
+  "turns": [
+    { "user": "I need an assessment" },
+    { "user": "For hiring, I guess. Not sure what kind yet." },
+    { "user": "Okay, entry-level customer service reps, mostly phone support." }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["clarification", "clarification", "recommendation"],
+    "min_recommendations_by_end": 1,
+    "notes": "Behavior probe: turn 1 must NOT recommend on a maximally vague query. Should still resolve to a shortlist within the 8-turn budget once real signal appears."
+  }
+}

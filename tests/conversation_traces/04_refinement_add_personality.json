@@ -1,0 +1,15 @@
+{
+  "id": "04_refinement_add_personality",
+  "persona": "Hiring manager who adjusts requirements after seeing the first shortlist.",
+  "turns": [
+    { "user": "Hiring backend engineers for a coding assessment for selection." },
+    { "user": "Actually, can you also add a personality assessment to check team fit?" },
+    { "user": "Great, now narrow it down to just the top 3." }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["recommendation", "refinement", "refinement"],
+    "min_recommendations_by_end": 1,
+    "max_recommendations_after_turn3": 3,
+    "notes": "Behavior probe: refinement must update the existing shortlist rather than restarting discovery, and must honor an explicit count constraint."
+  }
+}

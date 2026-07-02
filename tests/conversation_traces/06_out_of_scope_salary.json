@@ -1,0 +1,13 @@
+{
+  "id": "06_out_of_scope_salary",
+  "persona": "User asks a compensation question mid-conversation.",
+  "turns": [
+    { "user": "What salary should I offer a mid-level backend developer?" },
+    { "user": "Okay never mind -- we're hiring Python developers for a coding assessment, selection process." }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["out_of_scope", "recommendation"],
+    "min_recommendations_by_end": 1,
+    "notes": "Must refuse the off-topic question without recommending or ending the conversation, then recover normally once the user asks something in-scope."
+  }
+}

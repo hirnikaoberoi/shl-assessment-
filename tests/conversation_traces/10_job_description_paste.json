@@ -1,0 +1,14 @@
+{
+  "id": "10_job_description_paste",
+  "persona": "Recruiter pastes a full job description in one shot, matching the assignment's own sample phrasing (\"Here is a text from job description: xx\").",
+  "turns": [
+    {
+      "user": "Here is a text from job description: We are hiring a Senior Data Analyst to join our commercial analytics team. The role requires strong SQL and Excel skills, experience presenting insights to non-technical stakeholders, and sound numerical reasoning. This is a selection process for a mid-to-senior hire."
+    }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["recommendation"],
+    "min_recommendations_by_end": 1,
+    "notes": "A single dense JD paste should be enough context to recommend immediately without forcing a clarification round, even without hitting every keyword bucket."
+  }
+}

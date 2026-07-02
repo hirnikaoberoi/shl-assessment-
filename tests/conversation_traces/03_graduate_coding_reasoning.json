@@ -1,0 +1,12 @@
+{
+  "id": "03_graduate_coding_reasoning",
+  "persona": "Campus recruiter with a fully-specified request in the opening message.",
+  "turns": [
+    { "user": "Hiring graduate software engineers for a coding and problem-solving assessment as part of our selection process." }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["recommendation"],
+    "min_recommendations_by_end": 1,
+    "notes": "Role + purpose + focus all present in one message -> should recommend immediately, no clarification round needed."
+  }
+}

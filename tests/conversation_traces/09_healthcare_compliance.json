@@ -1,0 +1,13 @@
+{
+  "id": "09_healthcare_compliance",
+  "persona": "Healthcare operations manager, information volunteered out of order across turns.",
+  "turns": [
+    { "user": "We're hiring for a healthcare admin role." },
+    { "user": "It's for patient record handling, needs to check compliance awareness and attention to detail. This is for selection." }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["clarification", "recommendation"],
+    "min_recommendations_by_end": 1,
+    "notes": "Role alone on turn 1 isn't enough (no purpose/focus) -> clarify. Turn 2 fills the gap -> recommend."
+  }
+}

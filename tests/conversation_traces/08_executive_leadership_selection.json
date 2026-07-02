@@ -1,0 +1,12 @@
+{
+  "id": "08_executive_leadership_selection",
+  "persona": "Executive search consultant with a fully specified need.",
+  "turns": [
+    { "user": "Selecting senior executives for leadership benchmarking and succession planning, with a focus on strategic decision-making." }
+  ],
+  "assertions": {
+    "expect_query_type_by_turn": ["recommendation"],
+    "min_recommendations_by_end": 1,
+    "notes": "Role + purpose + focus all present -> immediate recommendation, should skew toward personality/leadership-type assessments (test_type P/C) not entry-level knowledge tests."
+  }
+}
