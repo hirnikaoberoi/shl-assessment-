@@ -106,8 +106,10 @@ redundant final-turn latency.
 
 ## AI-tool disclosure
 
-Built with Claude Code (agentic coding): scraper design, retrieval, classifier, LLM
-orchestration, and tests were all written and iterated with it in this session, including
-catching and fixing the site-restructure/pagination issues during scraping and the
-recommendation-gating bug described above. I reviewed and directed each design decision
-rather than accepting a single generated pass.
+I used Claude Code as a coding assistant for implementation — scaffolding the FastAPI
+service and writing the scraper, retrieval, classifier, LLM orchestration, and test
+modules. The architectural decisions (BM25 over embeddings, rule-based control flow,
+structural gating on recommendations, sourcing the catalog via the Wayback Machine after
+finding SHL's live listing page had been restructured) are mine; I reviewed, tested, and
+fixed issues in the generated code at each step, including the site-restructure/pagination
+handling and the recommendation-gating bug described above.
